@@ -32,6 +32,12 @@
             letter-spacing: 0;
             line-height: normal;
             margin-bottom: -22px;
+            transition: text-shadow 0.2s ease-in-out;
+        }
+
+        h1:hover {
+            cursor: default;
+            text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.9);
         }
 
         h2 {
@@ -43,7 +49,9 @@
             line-height: normal;
         }
 
-
+        h2:hover{
+            cursor: default;
+        }
 
         .buttons {
             margin-bottom: 10px;
@@ -72,14 +80,15 @@
             border-radius: 50%;
             width: 70px;
             height: 70px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;;
+            transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+            ;
         }
 
         .img-text {
             font-family: "Poppins-Bold", Helvetica;
             font-weight: 700;
-            font-size: 17px; 
-            color: #0b1c47; 
+            font-size: 17px;
+            color: #0b1c47;
             margin: 18px;
             margin-bottom: auto;
             cursor: default;
@@ -88,10 +97,10 @@
         .img:hover {
             transform: scale(1.2);
             box-shadow: 0 0 10px 5px rgba(106, 138, 235, 0.464);
-            
+
         }
 
-        
+
         img-button {
             padding: 10px 20px;
             margin: 10px;
@@ -165,7 +174,7 @@
         <div class="img-buttons">
             <div class="buttons">
                 <a href="#" onclick="startRecording()">
-                    <img src="img/rekam.png" alt="Mulai Rekam" class="img">
+                    <img src="img/rekam.svg" alt="Mulai Rekam" class="img">
                 </a>
                 <a href="#" onclick="stopRecording()">
                     <img src="img/stop.png" alt="Berhenti Rekam" class="img">
@@ -173,13 +182,13 @@
                 <a href="#" onclick="saveRecording()">
                     <img src="img/download.png" alt="Simpan Rekaman" class="img">
                 </a>
-                
+
             </div>
             <span class="img-text">Mulai</span>
             <span class="img-text">Berhenti</span>
             <span class="img-text">Simpan</span>
 
-            <div class="input" >
+            <div class="input">
                 <input type="text" id="fileName" placeholder="Nama Rekaman">
 
             </div>
